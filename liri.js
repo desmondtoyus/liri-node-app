@@ -68,6 +68,10 @@ function showTweets() {
 }
 // function to fetch MUSIC data from spotify
 function spotifySong() {
+    if (typeof search==='undefined')
+        {
+            search="The Sign";
+        }
     console.log('Search for: ' + search);
     var spotify = new Spotify(spotifyKey);
 
